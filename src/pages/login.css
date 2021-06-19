@@ -1,0 +1,46 @@
+
+  .boxLogin{
+    width: 100%;
+    height: 100%;
+  }
+  .boxImgUser{
+    width: 100%;
+    height: 220px;
+  }
+  .boxFormLogin{
+    width: 100%;
+    height: 60%;
+    background-image: url("./designs/fundoLogin.png");
+  }
+  .formLogin{
+    width: 100%;
+  }
+  .boxInputUser{
+    width: 100%;
+  }
+  .boxInputPassword{
+    width: 100%;
+    margin-top: 15px;
+  }
+  .boxButtonLogin{
+    margin-top: 45px;
+  }
+  .linkSair{
+    z-index: 1;
+    margin-top: 5px;
+  }
+  .buttonCloseApp{
+    margin-top: 10px;
+  }
+  #img_user{
+    width: 130px;
+  }
+  #img_fundoLogin {
+    height: 100%;
+    width: 100%;
+    bottom: 0%;
+    z-index: 1;
+  }
+  i{
+    z-index: 1;
+  }
