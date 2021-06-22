@@ -1,5 +1,5 @@
 import React from 'react'
-import PgLogin from './pages/login';
+import PgLogin from './pages/login/login';
 import './App.css';
 
 function App() {

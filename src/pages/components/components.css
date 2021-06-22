@@ -8,16 +8,16 @@
     background-color: transparent;
     border-radius: 25px;
     font-size: 16px;
-    border: 1px solid #3b3b3b;
+    border: 1px solid white;
     width: 170px;
     transition: 1s ;
-    color: #3b3b3b;
+    color: white;
     backdrop-filter: blur(2px);
 }
 .buttonLogin:hover{
     transition: 1s;
-    background-color: #3b3b3b;
-    color: white;
+    background-color: white;
+    color: #3b3b3b;
 }
 .buttonCloseApp{
     z-index: 1;
@@ -46,4 +46,13 @@ input{outline:none}
     font-size: 17px;
     z-index: 2;
     background: transparent;
+    color: white;
+    transition:0.5s
+}
+::-webkit-input-placeholder{
+    color:rgb(196, 196, 196)
+}
+.inputLogin:focus{
+    background-color: rgb(53, 53, 53);
+    transition: 0.5s;
 }

@@ -1,7 +1,21 @@
 
-  .boxLogin{
+  .boxAllLogin{
     width: 100%;
-    height: 100%;
+    height: 100vh  ;
+    background-color: #353535;
+  }
+  .boxLogin{
+    width: 360px;
+    height: 60%;
+    /* border: 1px solid white; */
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    box-shadow: 0 0 3em #1b1b1b;
+    transition: 0.5s;
+  }
+  .boxLogin:hover{
+    box-shadow: 0 0 4em #131313;
+    transition: 0.5s;
   }
   .boxImgUser{
     width: 100%;
@@ -10,7 +24,6 @@
   .boxFormLogin{
     width: 100%;
     height: 60%;
-    background-image: url("./designs/fundoLogin.png");
   }
   .formLogin{
     width: 100%;
@@ -30,7 +43,7 @@
     margin-top: 5px;
   }
   .buttonCloseApp{
-    margin-top: 10px;
+    margin-top: 15px;
   }
   #img_user{
     width: 130px;
