@@ -1,12 +1,9 @@
 import React from 'react'
-import img_fundoLogin from '../designs/fundoLogin.png';
 import img_user from '../designs/user.png'
 import './login.css'
 import '../configs.css'
-import Button from '../components/button'
-import Input from '../components/input'
-
-
+import Button from '../designs/components/button'
+import Input from '../designs/components/input'
 
 class pgLogin extends React.Component {
     render() {

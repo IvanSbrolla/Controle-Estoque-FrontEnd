@@ -9,4 +9,5 @@ export default (props) => {
 -buttonDefault
 -buttonLogin
 -buttonCloseApp
+-buttonMenu
 */

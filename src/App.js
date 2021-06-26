@@ -1,12 +1,16 @@
 import React from 'react'
-import PgLogin from './pages/login/login';
-import './App.css';
+import { BrowserRouter as Router } from "react-router-dom";
+import Content from './pages/routes/routes'
+import './pages/configs.css';
 
 function App() {
   return (
-    <div id='app'>
-      <PgLogin />
+    <div className='flex flexRow'>
+      <Router>
+        <Content />
+      </Router>
     </div>
+
   )
 }
 

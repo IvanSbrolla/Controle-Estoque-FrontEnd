@@ -1,0 +1,118 @@
+/* Menu */
+.boxMenu {
+    height: 100vh;
+    width: 19%;
+    background-color: #2b2b2b;
+    border-right: 1px solid #0077b6;
+}
+.boxMenuLogo{
+    width: 100%;
+    height: 20vh;
+    border-bottom: 1px solid #0077b6;
+}
+.logoMenu{
+    color: #0077b6;
+}
+.titleMenu{
+    color: rgba(255, 255, 255, 0.76);
+    padding-top: 5px;
+    font-size: 18px;
+}
+.boxIndexMenu{
+    height: 80vh;
+}
+.boxIndexMenuCloseApp{
+    height: 100%;
+    justify-content: flex-end;
+}
+/* Menu index */
+.indexMenu{
+    background-color: #2b2b2b;
+    transition: 0.5s;
+}
+.indexMenu:hover{
+    transition: 0.5s;
+    background-color: #353535;
+}
+.indexMenu:hover  .iconMenuIndex{
+    transition: 0.5s;
+    color: #06d6a0;
+}
+.boxImageMenuIndex{
+    height: 8vh;
+    width: 30%;
+}
+.boxTitleMenuIndex{
+    width: 70%;
+    height: 8vh;
+}
+.iconMenuIndex{
+    transition: 0.5s;
+    color: #0077b6;
+    font-size: 30px;
+}
+.titleMenuIndex{
+    color:white
+}
+/* buttons */
+.buttonDefault {
+}
+.buttonMenu{
+    width: 100%;
+    height: 8vh;
+}
+.buttonLogin {
+    z-index: 1;
+    padding: 10px 5px;
+    background-color: transparent;
+    border-radius: 25px;
+    font-size: 16px;
+    border: 1px solid white;
+    width: 170px;
+    transition: 1s;
+    color: white;
+    backdrop-filter: blur(2px);
+}
+.buttonLogin:hover {
+    transition: 1s;
+    background-color: white;
+    color: #3b3b3b;
+}
+.buttonCloseApp {
+    z-index: 1;
+    background-color: transparent;
+    padding: 8px 12px;
+    border-radius: 100%;
+    border: none;
+    color: #3b3b3b;
+    transition: 1s;
+}
+.buttonCloseApp:hover {
+    transition: 1s;
+    background-color: #3b3b3b;
+    color: white;
+}
+/* inputs */
+input {
+    outline: none;
+}
+.inputDefault {
+}
+.inputLogin {
+    width: 70%;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 10px 7px;
+    font-size: 17px;
+    z-index: 2;
+    background: transparent;
+    color: white;
+    transition: 0.5s;
+}
+::-webkit-input-placeholder {
+    color: rgb(196, 196, 196);
+}
+.inputLogin:focus {
+    background-color: rgb(53, 53, 53);
+    transition: 0.5s;
+}
