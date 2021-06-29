@@ -3,7 +3,7 @@ const { app, BrowserWindow } = require('electron')
 let window
 
 app.whenReady().then(() => {
-    createWindow('http://localhost:3000')
+    createWindow('http://localhost:3000/login')
 })
 
 app.on('window-all-closed', function () {

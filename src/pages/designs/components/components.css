@@ -5,59 +5,61 @@
     background-color: #2b2b2b;
     border-right: 1px solid #0077b6;
 }
-.boxMenuLogo{
+.boxMenuLogo {
     width: 100%;
     height: 20vh;
-    border-bottom: 1px solid #0077b6;
 }
-.logoMenu{
+.logoMenu {
     color: #0077b6;
 }
-.titleMenu{
+.titleMenu {
     color: rgba(255, 255, 255, 0.76);
     padding-top: 5px;
     font-size: 18px;
 }
-.boxIndexMenu{
+.boxIndexMenu {
     height: 80vh;
 }
-.boxIndexMenuCloseApp{
+.boxIndexMenuCloseApp {
     height: 100%;
     justify-content: flex-end;
 }
 /* Menu index */
-.indexMenu{
+.indexMenu {
     background-color: #2b2b2b;
     transition: 0.5s;
 }
-.indexMenu:hover{
+.indexMenu a {
+    color: white;
+}
+.indexMenu:hover {
     transition: 0.5s;
     background-color: #353535;
 }
-.indexMenu:hover  .iconMenuIndex{
+.indexMenu:hover .iconMenuIndex {
     transition: 0.5s;
     color: #06d6a0;
 }
-.boxImageMenuIndex{
+.boxImageMenuIndex {
     height: 8vh;
     width: 30%;
 }
-.boxTitleMenuIndex{
+.boxTitleMenuIndex {
     width: 70%;
     height: 8vh;
 }
-.iconMenuIndex{
+.iconMenuIndex {
     transition: 0.5s;
     color: #0077b6;
     font-size: 30px;
 }
-.titleMenuIndex{
-    color:white
+.titleMenuIndex {
+    color: white;
 }
 /* buttons */
 .buttonDefault {
 }
-.buttonMenu{
+.buttonMenu {
     width: 100%;
     height: 8vh;
 }
@@ -92,6 +94,19 @@
     background-color: #3b3b3b;
     color: white;
 }
+.buttonPopUp {
+    min-width: 70px;
+    padding: 6px 14px;
+    background-color: transparent;
+    border: 1px solid #0077b6;
+    color: white;
+    transition: 0.5s;
+}
+.buttonPopUp:hover {
+    background-color: #1b1b1b;
+    border-color: #06d6a0;
+    transition: 0.5s;
+}
 /* inputs */
 input {
     outline: none;
@@ -115,4 +130,94 @@ input {
 .inputLogin:focus {
     background-color: rgb(53, 53, 53);
     transition: 0.5s;
+}
+/* TitlePage */
+.boxTitlePageAll {
+    width: 100%;
+}
+.txtTitlePage {
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 50px;
+    color: #0077b6;
+}
+/* Tables */
+.tableDefault tr {
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid #0076b6cc;
+    border-top: 1px solid #0076b6cc;
+    transition: 0.5s;
+}
+.tableDefault tr:hover {
+    border-color: #06d6a0;
+    color: #06d6a0;
+    transition: 0.5s;
+}
+th {
+    width: 100%;
+    padding: 15px 5px 15px 15px;
+    color: white;
+
+    background-color: #2b2b2b;
+}
+.thId {
+    width: 25%;
+}
+td {
+    width: 100%;
+    padding: 9px 5px 9px 15px;
+    color: white;
+}
+.tdId {
+    width: 25%;
+}
+.tableDefault {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.tableFrenteCaixa {
+}
+/* PopUp */
+.boxPopUpAll {
+    width: 100%;
+    height: 100vh;
+    background-color: #2b2b2bd0;
+    position: absolute;
+    display: flex;
+    z-index: 99;
+}
+.boxPopUp {
+    padding: 15px;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    min-width: 200px;
+    border: 1px solid #1b1b1b;
+    box-shadow: 0 0 2em #1b1b1b;
+    transition: 0.5s;
+}
+.boxPopUp:hover{
+    box-shadow: 0 0 3em #1b1b1b;
+    transform: scale(1.03);
+    transition: 0.5s;
+}
+.boxPopUpAll i {
+    color: #0076b6cc;
+}
+.boxContentPopUp{
+    color: white;
+    padding: 25px 15px;
+}
+.boxPopUpBtns {
+    width: 100%;
+    height: 30px;
+    justify-content: flex-end;
+}
+.popUp-hide {
+    display: none;
+}
+.popUp-show {
+    display: flex;
 }

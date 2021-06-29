@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import img_user from '../designs/user.png'
 import './login.css'
 import '../configs.css'
 import Button from '../designs/components/button'
 import Input from '../designs/components/input'
+import PopUp from '../designs/components/popUp'
 
-class pgLogin extends React.Component {
-    render() {
-        return (
+export default (props) => {
+    const [popUpStatus, setPopUpStatus] = useState('popUp-hide')
+
+    return (
+        <React.Fragment>
+            <PopUp btn='yesOrNo' status={popUpStatus} changeStatus={setPopUpStatus} onConfirm={() => window.close()} icon='closeApp' content={closeAppContent()}/>
             <div className="flex flexColumn flexCenter boxAllLogin">
                 <div className='boxLogin'>
                     {/* box image user */}
@@ -25,14 +30,25 @@ class pgLogin extends React.Component {
                             </div>
                         </form>
                         <div className="flex flexColumn flexCenter boxButtonLogin">
-                            <Button text='Entrar' className='buttonLogin quicksand' />
+                            <Link to='/funcionarios'>
+                                <Button text='Entrar' className='buttonLogin quicksand' />
+                            </Link>
                         </div>
-                        <Button className='buttonCloseApp' id='btnSair' text={<i class="fas fa-times "></i>} onClick={() => window.close()} />
+
+                        <Button className='buttonCloseApp' id='btnSair' text={<i class="fas fa-times "></i>} onClick={() => setPopUpStatus('popUp-show')} />
+
+
                     </div>
                 </div>
             </div>
-        )
-    }
+        </React.Fragment>
+    )
 }
-export default pgLogin
+
+const closeAppContent = () => {
+    return (
+        <label>Tem certeza que deseja sair?</label>
+    )
+}
+
 

@@ -1,15 +1,12 @@
 import React from 'react'
 import '../configs.css'
 import './empresas.css'
+import TitlePage from '../designs/components/titlePage'
 
-
-
-class pgEmpresas extends React.Component {
-    render() {
-        return(
-            <h1>EMPRESAS</h1>
-        )
-    }
+export default (props) => {
+    return(
+        <div className='boxEmpresasAll'>
+            <TitlePage title='Empresas'/>
+        </div>
+    )
 }
-
-export default pgEmpresas

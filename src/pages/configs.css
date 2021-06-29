@@ -1,28 +1,51 @@
-.boxAll{
+.boxAll {
   width: 100%;
 }
 /* Fontes */
-.quicksand{
-    font-family: 'Quicksand', sans-serif;
+.quicksand {
+  font-family: "Quicksand", sans-serif;
 }
 /* flex configs */
-.flex{
-    display: flex;
-  }
-  .flexCenter{
-    justify-content: center;
-    align-items: center;
-  }
-  .flexColumn{
-    flex-direction: column;
-  }
-  .flexRow{
-    flex-direction: row;
-  }
-  /* positions */
-  .relative{
-      position:relative
-  }
-  .absolute{
-      position:absolute
-  }
+.flex {
+  display: flex;
+}
+.flexCenter {
+  justify-content: center;
+  align-items: center;
+}
+.flexColumn {
+  flex-direction: column;
+}
+.flexRow {
+  flex-direction: row;
+}
+/* positions */
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+/* textos */
+a {
+  text-decoration: none;
+}
+/* margins */
+.margin-left-5px {
+  margin-left: 5px;
+}
+.margin-left-10px {
+  margin-left: 10px;
+}
+.margin-left-15px {
+  margin-left: 15px;
+}
+.margin-right-5px {
+  margin-right: 5px;
+}
+.margin-right-10px {
+  margin-right: 10px;
+}
+.margin-right-15px {
+  margin-right: 15px;
+}

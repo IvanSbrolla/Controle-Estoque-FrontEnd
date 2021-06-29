@@ -5,10 +5,11 @@ import Menu from '..//designs/components/menu'
 import PgLogin from '../pg_login/login';
 import PgFuncionarios from '../pg_funcionarios/funcionarios';
 import PgEmpresas from '../pg_empresas/empresas';
-import PgMovimentacao from '../pg_movimentacao/movimentacao';
+import PgMovimentacoes from '../pg_movimentacao/movimentacoes';
 import PgProdutos from '../pg_produtos/produtos';
 import PgFrenteCaixa from '../pg_frenteCaixa/frenteCaixa';
 import PgClientes from '../pg_clientes/clientes';
+import PgNotFound from '../pg_notFound/notfound'
 
 const Content = (props) => {
     return (
@@ -21,7 +22,6 @@ const Content = (props) => {
                     <Menu />
                     <PgFuncionarios />
                 </div>
-
             </Route>
             <Route path='/empresas'>
                 <div className='flex flexRow boxAll'>
@@ -29,33 +29,34 @@ const Content = (props) => {
                     <PgEmpresas />
                 </div>
             </Route>
-            <Route path='/movimentacao'>
+            <Route path='/movimentacoes'>
                 <div className='flex flexRow boxAll'>
                     <Menu />
-                    <PgMovimentacao />
+                    <PgMovimentacoes />
                 </div>
-
             </Route>
             <Route path='/produtos'>
                 <div className='flex flexRow boxAll'>
                     <Menu />
                     <PgProdutos />
                 </div>
-
             </Route>
             <Route path='/frenteCaixa'>
                 <div className='flex flexRow boxAll'>
                     <Menu />
                     <PgFrenteCaixa />
                 </div>
-
             </Route>
             <Route path='/clientes'>
                 <div className='flex flexRow boxAll'>
                     <Menu />
                     <PgClientes />
                 </div>
-
+            </Route>
+            <Route path='*'>
+                <div className='flex flexRow boxAll'>
+                    <PgNotFound />
+                </div>
             </Route>
         </Switch>
     )
