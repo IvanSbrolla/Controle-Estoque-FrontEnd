@@ -57,7 +57,21 @@
     color: white;
 }
 /* buttons */
+
 .buttonDefault {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 40px;
+    background-color: transparent;
+    min-width: 150px;
+    border:1px solid #0077b6;
+    color: white;
+    transition: 0.5s;
+}
+.buttonDefault:hover{
+    background-color: #2b2b2b;
+    border-color: #06d6a0;
+    transition: 0.5s;
 }
 .buttonMenu {
     width: 100%;
@@ -107,11 +121,46 @@
     border-color: #06d6a0;
     transition: 0.5s;
 }
+.buttonSearch{
+    background-color: transparent;
+    border:1px solid #0077b6;
+    color: #0077b6;
+    transition: 0.5s;
+    width: 30px;
+    height: 30px;
+}
+.buttonSearch:hover{
+    background-color: #2b2b2b;
+    border-color: #06d6a0;
+    transition: 0.5s;
+}
+.buttonSearch:hover .searchIcon{
+    color: #06d6a0;
+}
 /* inputs */
 input {
     outline: none;
 }
 .inputDefault {
+}
+.inputForm{
+    width: 90%;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #0077b6;
+    border-radius: 4px;
+    color: white;
+    font-size: 17px;
+    padding-left: 15px;
+    transition: 0.5s;
+}
+.inputForm:focus{
+    border-bottom: 1px solid #06d6a0;
+    background-color: #3b3b3b;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
 }
 .inputLogin {
     width: 70%;
@@ -134,12 +183,14 @@ input {
 /* TitlePage */
 .boxTitlePageAll {
     width: 100%;
+    background-color: #2b2b2b;
 }
 .txtTitlePage {
     margin-top: 30px;
     margin-left: 30px;
     font-size: 50px;
     color: #0077b6;
+    margin-bottom: 15px;
 }
 /* Tables */
 .tableDefault tr {
@@ -194,7 +245,7 @@ td {
     background-color: #2b2b2b;
     border-radius: 10px;
     min-width: 200px;
-    border: 1px solid #1b1b1b;
+    border: 1px solid #004c75cc;
     box-shadow: 0 0 2em #1b1b1b;
     transition: 0.5s;
 }
@@ -220,4 +271,23 @@ td {
 }
 .popUp-show {
     display: flex;
+}
+/* Select */
+.selectForm{
+    width: 90%;
+    height: 27px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #0077b6;
+    color: white;
+    font-size: 17px;
+    padding-left: 15px;
+    transition: 0.5s;
+}
+.selectForm:focus{
+    border-bottom: 1px solid #06d6a0;
+    background-color: #3b3b3b;
+    padding-bottom: 5px;
+    border-radius: 7px;
+    transition: 0.5s;
 }

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './components.css'
 import '../../configs.css'
 import PopUp from './popUp'
-import Button from './button'
+import {closeAppContent,closeApp} from '../../scripts/closeApp'
 
 import MenuIndex from './menuIndex'
 
@@ -10,7 +10,7 @@ export default (props) => {
     const [popUpStatus, setPopUpStatus] = useState('popUp-hide')
     return (
         <React.Fragment>
-            <PopUp btn='yesOrNo' status={popUpStatus} changeStatus={setPopUpStatus} onConfirm={() => window.close()} icon='closeApp' content={closeAppContent()}/>
+            <PopUp btn='yesOrNo' status={popUpStatus} changeStatus={setPopUpStatus} onConfirm={() => closeApp()} icon='closeApp' content={closeAppContent()}/>
             <div className='flex flexColumn boxMenu'>
                 <div className='flex flexCenter flexColumn boxMenuLogo'>
                     <i class="fas fa-dragon fa-5x logoMenu"></i>
@@ -32,8 +32,3 @@ export default (props) => {
     )
 }
 
-const closeAppContent = () => {
-    return (
-        <label>Tem certeza que deseja sair?</label>
-    )
-}
